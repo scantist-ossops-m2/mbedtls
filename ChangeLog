@@ -12,6 +12,11 @@ Security
      mbedtls_rsa_rsaes_oaep_decrypt. It is not triggerable remotely in
      SSL/TLS.
 
+Security
+   * Fix buffer overflow in RSA-PSS verification when the hash is too
+     large for the key size. Found by Seth Terashima, Qualcomm Product
+     Security Initiative, Qualcomm Technologies Inc.
+
 Features
    * Support for platform abstraction of the standard C library time()
      function.
