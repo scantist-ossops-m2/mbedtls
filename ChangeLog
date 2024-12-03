@@ -13,6 +13,11 @@ Security
      programs/aes/aescrypt2 and programs/aes/crypt_and_hash.
      Found by Laurent Simon.
 
+Security
+   * Fix buffer overflow in RSA-PSS verification when the hash is too
+     large for the key size. Found by Seth Terashima, Qualcomm Product
+     Security Initiative, Qualcomm Technologies Inc.
+
 Features
    * Add the functions mbedtls_platform_setup() and mbedtls_platform_teardown()
      and the context struct mbedtls_platform_context to perform
