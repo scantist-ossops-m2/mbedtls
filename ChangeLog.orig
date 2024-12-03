@@ -62,11 +62,6 @@ Security
      Found and fix proposed by Michael Schwarz, Samuel Weiser, Daniel Gruss,
      Clémentine Maurice and Stefan Mangard.
 
-Security
-   * Fix buffer overflow in RSA-PSS verification when the hash is too
-     large for the key size. Found by Seth Terashima, Qualcomm Product
-     Security Initiative, Qualcomm Technologies Inc.
-
 Features
    * Add hardware acceleration support for the Elliptic Curve Point module.
      This involved exposing parts of the internal interface to enable
