@@ -64,11 +64,6 @@ Security
      certificates. Found by Nicholas Wilson, fix and tests provided by
      Janos Follath. #280 and #319
 
-Security
-   * Fix buffer overflow in RSA-PSS verification when the hash is too
-     large for the key size. Found by Seth Terashima, Qualcomm Product
-     Security Initiative, Qualcomm Technologies Inc.
-
 Features
    * Experimental support for EC J-PAKE as defined in Thread 1.0.0.
      Disabled by default as the specification might still change.
