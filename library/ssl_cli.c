@@ -1161,7 +1161,7 @@ static int ssl_parse_server_psk_hint( ssl_context *ssl,
     len = (*p)[1] << 8 | (*p)[0];
     *p += 2;
 
-    if( (*p) + len > end )
+    if( (*p) > end - len )
     {
         SSL_DEBUG_MSG( 1, ( "bad server key exchange message (psk_identity_hint length)" ) );
         return( POLARSSL_ERR_SSL_BAD_HS_SERVER_KEY_EXCHANGE );
