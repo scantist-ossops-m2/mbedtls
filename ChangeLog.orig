@@ -278,11 +278,6 @@ Changes
 
 = mbed TLS 2.1.0 released 2015-09-04
 
-Security
-   * Fix buffer overflow in RSA-PSS verification when the hash is too
-     large for the key size. Found by Seth Terashima, Qualcomm Product
-     Security Initiative, Qualcomm Technologies Inc.
-
 Features
    * Added support for yotta as a build system.
    * Primary open source license changed to Apache 2.0 license.
